@@ -1,5 +1,7 @@
 from flask import Flask
 
-app = Flask(__name__)
-
-from app import routes  # Import routes at the end to avoid circular imports
+def create_app():
+    app = Flask(__name__)
+    from routes import bp as routes_bp  # Import the routes blueprint
+    app.register_blueprint(routes_bp)
+    return app
