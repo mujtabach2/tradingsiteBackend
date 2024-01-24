@@ -1,0 +1,6 @@
+numpy
+pandas
+open
+yfinance
+scikit-learn
+git+https://github.com/AI4Finance-Foundation/FinRL.git
