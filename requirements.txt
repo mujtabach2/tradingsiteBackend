@@ -4,4 +4,5 @@ datetime
 yfinance
 matplotlib
 Flask
-# gunicorn (for deployment)
+flask_cors
+# gunicorn (for deployment
